@@ -42,6 +42,7 @@ namespace APItest.StepDefinitions
         public void ThenSuccessMessageIsReceivedForPostRequest()
         {
             Assert.True(response.IsSuccessStatusCode);
+            _specFlowOutputHelper.WriteLine("specflow project success");
         }
     }
 }
