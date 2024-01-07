@@ -34,7 +34,7 @@ namespace APItest.StepDefinitions
             var contentdata=new StringContent(data,Encoding.UTF8,"application/json");
             response=await httpClient.PostAsync(uri, contentdata);
             responsebody= await response.Content.ReadAsStringAsync();
-            _specFlowOutputHelper.WriteLine("output: "+responsebody);
+            _specFlowOutputHelper.WriteLine("specflow output: "+responsebody);
 
         }
 
