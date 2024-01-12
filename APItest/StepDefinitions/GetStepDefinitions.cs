@@ -19,6 +19,7 @@ namespace APItest.StepDefinitions
         {
             httpClient = new HttpClient();
             this._specFlowOutputHelper = _specFlowOutputHelper;
+            string str;
         }
 
         [Given(@"hit the uri ""([^""]*)""")]
